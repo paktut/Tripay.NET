@@ -1,10 +1,23 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>Tripay.NET</PackageId>
+    <Authors>paktut</Authors>
+    <Description>An unofficial, modern, and easy-to-use .NET SDK for integrating with the Tripay Payment Gateway. This library is designed for .NET developers, providing a strongly-typed client to interact with the Tripay API, including support for dependency injection, automatic signature generation, and robust error handling.</Description>
+    <PackageTags>tripay,payment-gateway,sdk,dotnet,aspnetcore</PackageTags>
+    <RepositoryUrl>https://github.com/paktut/Tripay.NET</RepositoryUrl>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
